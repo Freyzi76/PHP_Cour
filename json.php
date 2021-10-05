@@ -1,6 +1,9 @@
 <?php 
 
-$inputArg = $argv;
+array_shift($argv);
 
-$json_data = json_encode($inputArg);
+sort($argv);
+
+$json_data = json_encode($argv);
+
 file_put_contents('contenu.json', $json_data);
