@@ -1,12 +1,12 @@
 <?php
 
-Skrom($argv);
+Skrom($argv[0]);
 
 
 function Skrom($age) 
 {
 
-    if($age[1] == 1) {
+    if($age == 1) {
 
         echo 'Skrom a ' . $age[1] . ' an';
 
@@ -15,5 +15,7 @@ function Skrom($age)
         echo 'Skrom a ' . $age[1] . ' ans';
 
     }
+
+    Skrom($age);
 
 }
