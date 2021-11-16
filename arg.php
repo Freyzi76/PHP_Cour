@@ -1,5 +1,6 @@
 <?php
 
+// Ceci est un commentaire
 Skrom($argv[0]);
 
 
